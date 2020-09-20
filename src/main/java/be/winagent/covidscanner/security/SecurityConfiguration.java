@@ -1,4 +1,4 @@
-package be.fkgent.election.security;
+package be.winagent.covidscanner.security;
 
 import com.kakawait.spring.boot.security.cas.autoconfigure.CasHttpSecurityConfigurer;
 import org.springframework.context.annotation.Configuration;

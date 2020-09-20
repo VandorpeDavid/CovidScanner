@@ -1,6 +1,6 @@
-package be.fkgent.election.services.implementation;
+package be.winagent.covidscanner.services.implementation;
 
-import be.fkgent.election.domain.models.User;
+import be.winagent.covidscanner.domain.models.User;
 import org.springframework.security.core.GrantedAuthority;
 
 import java.util.ArrayList;

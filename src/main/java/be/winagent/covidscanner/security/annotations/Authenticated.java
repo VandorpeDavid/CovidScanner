@@ -1,4 +1,4 @@
-package be.fkgent.election.security.annotations;
+package be.winagent.covidscanner.security.annotations;
 
 import org.springframework.security.access.annotation.Secured;
 

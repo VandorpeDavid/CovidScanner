@@ -1,6 +1,6 @@
-package be.fkgent.election.services;
+package be.winagent.covidscanner.services;
 
-import be.fkgent.election.domain.models.Association;
+import be.winagent.covidscanner.domain.models.Association;
 
 import java.util.List;
 import java.util.Optional;

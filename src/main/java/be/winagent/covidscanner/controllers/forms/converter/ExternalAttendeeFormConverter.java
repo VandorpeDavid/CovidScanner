@@ -1,7 +1,7 @@
-package be.fkgent.election.controllers.forms.converter;
+package be.winagent.covidscanner.controllers.forms.converter;
 
-import be.fkgent.election.controllers.forms.models.ExternalAttendeeForm;
-import be.fkgent.election.domain.models.ExternalAttendee;
+import be.winagent.covidscanner.controllers.forms.models.ExternalAttendeeForm;
+import be.winagent.covidscanner.domain.models.ExternalAttendee;
 import org.springframework.stereotype.Component;
 
 @Component

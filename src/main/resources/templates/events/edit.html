@@ -6,11 +6,12 @@
 <section layout:fragment="content">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a th:href="@{/associations/show(association=${association.abbreviation})}" th:text="${association.name}"/></li>
+            <li class="breadcrumb-item"><a th:href="@{/associations/show(association=${event.association.abbreviation})}" th:text="${event.association.name}"/></li>
+            <li class="breadcrumb-item"><a th:href="@{/events/show(event=${event.id})}" th:text="${event.name}"/></li>
             <li class="breadcrumb-item active" aria-current="page">Evenement aanpassen</li>
         </ol>
     </nav>
-    <h1 class="pb-2">Evenement aanpassen: <th:fragment th:text="${event}"></th:fragment></h1>
+    <h1 class="pb-2">Evenement aanpassen: <th:fragment th:text="${event.name}"></th:fragment></h1>
     <form
             class="form-horizontal create_election"
             th:method="POST"

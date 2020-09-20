@@ -4,15 +4,21 @@
 </head>
 <body>
 <section layout:fragment="content">
-    Welkom op het FK stemsysteem.
-    <th:block th:if="${adminAssociations.size() > 0}">
+    <p>Welkom op de WiNA Identification Scan Helper (WISH).</p>
+    <div th:if="${adminAssociations.size() > 0}">
         U kan volgende verenigingen beheren:
         <div class="list-group pt-3 pb-3 pl-5">
             <span th:each="association : ${adminAssociations}">
-                <a class="col-sm-4 btn btn-primary list-group-item list-group-item-action m-1" th:href="@{/associations/show(association=${association.abbreviation})}" th:text="${association.name}"></a>
+                <a class="col-sm-4 btn btn-primary list-group-item list-group-item-action m-1"
+                   th:href="@{/associations/show(association=${association.abbreviation})}"
+                   th:text="${association.name}"></a>
             </span>
         </div>
-    </th:block>
+    </div>
+
+    <p th:if="${adminAssociations.size() == 0}">
+        U heeft geen rechten op dit platform.
+    </p>
 </section>
 
 </body>

@@ -1,8 +1,8 @@
-package be.fkgent.election.domain.repositories;
+package be.winagent.covidscanner.domain.repositories;
 
-import be.fkgent.election.domain.models.Event;
-import be.fkgent.election.domain.models.UGentAttendee;
-import be.fkgent.election.domain.models.User;
+import be.winagent.covidscanner.domain.models.Event;
+import be.winagent.covidscanner.domain.models.UGentAttendee;
+import be.winagent.covidscanner.domain.models.User;
 import org.springframework.data.repository.CrudRepository;
 
 public interface UGentAttendeeRepository extends CrudRepository<UGentAttendee, Long> {

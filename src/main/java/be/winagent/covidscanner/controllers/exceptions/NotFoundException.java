@@ -1,4 +1,4 @@
-package be.fkgent.election.controllers.exceptions;
+package be.winagent.covidscanner.controllers.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

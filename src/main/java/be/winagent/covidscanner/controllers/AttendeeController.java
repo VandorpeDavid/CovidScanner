@@ -1,16 +1,15 @@
-package be.fkgent.election.controllers;
+package be.winagent.covidscanner.controllers;
 
-import be.fkgent.election.controllers.annotations.Required;
-import be.fkgent.election.controllers.exceptions.NotFoundException;
-import be.fkgent.election.controllers.forms.converter.ExternalAttendeeFormConverter;
-import be.fkgent.election.controllers.forms.models.ExternalAttendeeForm;
-import be.fkgent.election.controllers.messages.AttendeeData;
-import be.fkgent.election.controllers.messages.AttendeeScan;
-import be.fkgent.election.domain.models.Attendee;
-import be.fkgent.election.domain.models.Event;
-import be.fkgent.election.domain.models.User;
-import be.fkgent.election.services.EventService;
-import be.fkgent.election.services.UserService;
+import be.winagent.covidscanner.controllers.annotations.Required;
+import be.winagent.covidscanner.controllers.exceptions.NotFoundException;
+import be.winagent.covidscanner.controllers.forms.converter.ExternalAttendeeFormConverter;
+import be.winagent.covidscanner.controllers.forms.models.ExternalAttendeeForm;
+import be.winagent.covidscanner.controllers.messages.AttendeeData;
+import be.winagent.covidscanner.controllers.messages.AttendeeScan;
+import be.winagent.covidscanner.domain.models.Event;
+import be.winagent.covidscanner.domain.models.User;
+import be.winagent.covidscanner.services.EventService;
+import be.winagent.covidscanner.services.UserService;
 import com.opencsv.bean.StatefulBeanToCsv;
 import com.opencsv.bean.StatefulBeanToCsvBuilder;
 import com.opencsv.exceptions.CsvDataTypeMismatchException;
@@ -35,7 +34,7 @@ import java.util.stream.Collectors;
 @Controller
 @RequestMapping("/attendees")
 @AllArgsConstructor
-public class AttendeeController extends FkElectionController {
+public class AttendeeController extends CovidScannerController {
     private final EventService eventService;
     private final UserService userService;
     private final ExternalAttendeeFormConverter externalAttendeeFormConverter;

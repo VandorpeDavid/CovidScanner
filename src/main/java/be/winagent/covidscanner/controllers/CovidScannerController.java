@@ -1,12 +1,12 @@
-package be.fkgent.election.controllers;
+package be.winagent.covidscanner.controllers;
 
-import be.fkgent.election.controllers.exceptions.NotFoundException;
-import be.fkgent.election.domain.models.Association;
-import be.fkgent.election.domain.models.Event;
-import be.fkgent.election.domain.models.User;
-import be.fkgent.election.services.AssociationService;
-import be.fkgent.election.services.AuthenticationService;
-import be.fkgent.election.services.EventService;
+import be.winagent.covidscanner.controllers.exceptions.NotFoundException;
+import be.winagent.covidscanner.domain.models.Association;
+import be.winagent.covidscanner.domain.models.Event;
+import be.winagent.covidscanner.domain.models.User;
+import be.winagent.covidscanner.services.AssociationService;
+import be.winagent.covidscanner.services.AuthenticationService;
+import be.winagent.covidscanner.services.EventService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.Optional;
 import static java.util.function.Predicate.not;
 
-public abstract class FkElectionController {
+public abstract class CovidScannerController {
     @Autowired
     private AssociationService associationService;
 

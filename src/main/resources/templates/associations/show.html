@@ -4,16 +4,17 @@
 </head>
 <body>
 <section layout:fragment="content">
-
-<h1 th:text="${association.name}"></h1>
-<h2>Evenementen</h2>
+    <h1 th:text="${association.name}"></h1>
+    <h2>Evenementen</h2>
     <div class="list-group pt-3 pb-3 pl-5">
         <span th:each="event : ${association.events}">
-            <a class="col-sm-4 btn btn-primary list-group-item list-group-item-action m-1" th:href="@{/events/show(event=${event.id})}" th:text="${event.name}">
+            <a class="col-sm-4 btn btn-primary list-group-item list-group-item-action m-1"
+               th:href="@{/events/show(event=${event.id})}" th:text="${event.name}">
             </a>
         </span>
     </div>
-    <a class="btn btn-primary mt-5" th:href="@{/events/create(association=${association.abbreviation})}">Evenement aanmaken</a>
+    <a class="btn btn-primary mt-5" th:href="@{/events/create(association=${association.abbreviation})}">Evenement
+        aanmaken</a>
 
     <h2 class="pt-4">Beheerders</h2>
     <ul>
@@ -21,7 +22,8 @@
             <th:block th:text="${admin}">
 
             </th:block>
-            <form th:action="@{/associations/deleteAdmin(association=${association.abbreviation})}" th:method="POST" class="d-inline">
+            <form th:action="@{/associations/deleteAdmin(association=${association.abbreviation})}" th:method="POST"
+                  class="d-inline">
                 <input type="hidden" class="form-control" name="username" th:value="${admin.username}">
                 <button type="submit" class="btn btn-link">
                     <i class="material-icons">delete</i>

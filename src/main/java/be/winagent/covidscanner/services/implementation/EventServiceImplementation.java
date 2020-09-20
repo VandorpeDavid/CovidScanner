@@ -1,15 +1,15 @@
-package be.fkgent.election.services.implementation;
+package be.winagent.covidscanner.services.implementation;
 
 
-import be.fkgent.election.domain.models.UGentAttendee;
-import be.fkgent.election.domain.models.Event;
-import be.fkgent.election.domain.models.ExternalAttendee;
-import be.fkgent.election.domain.models.User;
-import be.fkgent.election.domain.repositories.AttendeeRepository;
-import be.fkgent.election.domain.repositories.EventRepository;
-import be.fkgent.election.domain.repositories.ExternalAttendeeRepository;
-import be.fkgent.election.domain.repositories.UGentAttendeeRepository;
-import be.fkgent.election.services.EventService;
+import be.winagent.covidscanner.domain.models.UGentAttendee;
+import be.winagent.covidscanner.domain.models.Event;
+import be.winagent.covidscanner.domain.models.ExternalAttendee;
+import be.winagent.covidscanner.domain.models.User;
+import be.winagent.covidscanner.domain.repositories.AttendeeRepository;
+import be.winagent.covidscanner.domain.repositories.EventRepository;
+import be.winagent.covidscanner.domain.repositories.ExternalAttendeeRepository;
+import be.winagent.covidscanner.domain.repositories.UGentAttendeeRepository;
+import be.winagent.covidscanner.services.EventService;
 import lombok.AllArgsConstructor;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -17,7 +17,6 @@ import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;
 import java.time.LocalDateTime;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Service
 @AllArgsConstructor

@@ -1,10 +1,10 @@
-package be.fkgent.election.controllers;
+package be.winagent.covidscanner.controllers;
 
-import be.fkgent.election.domain.models.Association;
-import be.fkgent.election.domain.models.User;
-import be.fkgent.election.security.annotations.Authenticated;
-import be.fkgent.election.services.AssociationService;
-import be.fkgent.election.services.implementation.LDAPUserService;
+import be.winagent.covidscanner.domain.models.Association;
+import be.winagent.covidscanner.domain.models.User;
+import be.winagent.covidscanner.security.annotations.Authenticated;
+import be.winagent.covidscanner.services.AssociationService;
+import be.winagent.covidscanner.services.implementation.LDAPUserService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,9 +18,8 @@ import java.util.stream.Collectors;
 @Controller
 @AllArgsConstructor
 @RequestMapping("/")
-public class HomeController extends FkElectionController {
+public class HomeController extends CovidScannerController {
     private final AssociationService associationService;
-    private final LDAPUserService userRepository;
 
     @GetMapping("/")
     @Authenticated

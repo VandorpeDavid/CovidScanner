@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta name="description" content="Covid Scanner van WiNA Gent">
-    <meta id="_csrf" name="_csrf" th:content="${_csrf.token}"/>
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
@@ -40,44 +39,9 @@
         WiNA Gent
     </a>
 </nav>
-<section class="container" th:if="${ infoAlert != null || dangerAlert != null || successAlert != null}">
-
-    <div th:if="${infoAlert != null}" class="alert alert-dismissible alert-info" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-
-        <span
-                th:text="${infoAlert}"
-        >
-                </span>
-    </div>
-    <div th:if="${successAlert != null}" class="alert alert-dismissible alert-success" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-
-        <span
-                th:text="${successAlert}"
-        >
-                </span>
-    </div>
-    <div th:if="${dangerAlert != null}" class="alert alert-dismissible alert-danger" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-
-        <span
-                th:text="${dangerAlert}"
-        >
-                </span>
-    </div>
-</section>
 
 <section class="container">
-    <div id="content" layout:fragment="content">
-
-    </div> <!-- #content -->
+    <h1>Error: er ging iets mis.</h1>
 </section>
 <footer>
     <div class="footer fixed-bottom bg-light p-3">

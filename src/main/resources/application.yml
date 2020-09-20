@@ -2,24 +2,22 @@ security:
   cas:
     server:
       base-url: https://login.ugent.be
-      protocol-version: 2  # has to be explicitly declared (standard = 3)
+      protocol-version: 2  # has to be explicitly declared (default = 3)
     service:
-      base-url: http://local.todo.ugent.be:8080
-application:
-  baseUrl: http://local.todo.ugent.be:8080
+      base-url: https://wish.wina-gent.be/
+
 ugent.ldap:
   url: ldaps://ldaps.ugent.be
-  userDn: cn=vek-soccer,ou=applications,dc=UGent,dc=be
-  password: 'PLACEHOLDER'
+
+azure.keyvault:
+  enabled: true
+  uri: https://covid-scanner-kv.vault.azure.net/
 
 ## PostgreSQL
 spring:
+  h2:
+    console:
+      enabled: false
   datasource:
-    url: jdbc:postgresql://localhost/covidscanner
-    username: covidscanner
-    password: covidscanner
-  mail:
-    host: localhost
-    port: 25
-
-server.port: 8080
+    url: jdbc:postgresql://covid-scanner-db.postgres.database.azure.com/covidscanner
+    username: covidscanner@covid-scanner-db

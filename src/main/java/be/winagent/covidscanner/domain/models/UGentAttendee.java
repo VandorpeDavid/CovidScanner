@@ -1,8 +1,7 @@
-package be.fkgent.election.domain.models;
+package be.winagent.covidscanner.domain.models;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.util.StringUtils;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;

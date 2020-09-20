@@ -1,4 +1,4 @@
-package be.fkgent.election.validators;
+package be.winagent.covidscanner.validators;
 
 public interface HasContactDetails {
     String getEmail();

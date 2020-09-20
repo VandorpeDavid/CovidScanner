@@ -1,9 +1,9 @@
-package be.fkgent.election.security;
+package be.winagent.covidscanner.security;
 
-import be.fkgent.election.domain.models.Association;
-import be.fkgent.election.domain.models.Event;
-import be.fkgent.election.domain.models.User;
-import be.fkgent.election.services.AuthenticationService;
+import be.winagent.covidscanner.domain.models.Association;
+import be.winagent.covidscanner.domain.models.Event;
+import be.winagent.covidscanner.domain.models.User;
+import be.winagent.covidscanner.services.AuthenticationService;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.security.access.expression.SecurityExpressionRoot;

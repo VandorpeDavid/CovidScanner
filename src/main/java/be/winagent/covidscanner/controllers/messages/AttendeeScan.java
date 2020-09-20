@@ -1,6 +1,5 @@
-package be.fkgent.election.controllers.messages;
+package be.winagent.covidscanner.controllers.messages;
 
-import be.fkgent.election.domain.models.User;
 import lombok.Getter;
 import lombok.Setter;
 

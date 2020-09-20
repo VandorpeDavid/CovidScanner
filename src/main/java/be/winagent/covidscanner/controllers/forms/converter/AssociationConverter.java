@@ -1,7 +1,7 @@
-package be.fkgent.election.controllers.forms.converter;
+package be.winagent.covidscanner.controllers.forms.converter;
 
-import be.fkgent.election.controllers.forms.models.AssociationForm;
-import be.fkgent.election.domain.models.Association;
+import be.winagent.covidscanner.controllers.forms.models.AssociationForm;
+import be.winagent.covidscanner.domain.models.Association;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -1,7 +1,7 @@
-package be.fkgent.election.controllers.forms.models;
+package be.winagent.covidscanner.controllers.forms.models;
 
-import be.fkgent.election.validators.ContactDetailsRequired;
-import be.fkgent.election.validators.HasContactDetails;
+import be.winagent.covidscanner.validators.ContactDetailsRequired;
+import be.winagent.covidscanner.validators.HasContactDetails;
 import lombok.Data;
 
 import javax.validation.constraints.Email;

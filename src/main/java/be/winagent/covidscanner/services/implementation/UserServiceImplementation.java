@@ -1,11 +1,10 @@
-package be.fkgent.election.services.implementation;
+package be.winagent.covidscanner.services.implementation;
 
-import be.fkgent.election.domain.models.Barcode;
-import be.fkgent.election.domain.models.User;
-import be.fkgent.election.domain.repositories.BarcodeRepository;
-import be.fkgent.election.domain.repositories.UserRepository;
-import be.fkgent.election.services.UserService;
-import liquibase.pro.packaged.B;
+import be.winagent.covidscanner.domain.models.Barcode;
+import be.winagent.covidscanner.domain.models.User;
+import be.winagent.covidscanner.domain.repositories.BarcodeRepository;
+import be.winagent.covidscanner.domain.repositories.UserRepository;
+import be.winagent.covidscanner.services.UserService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import java.util.Optional;

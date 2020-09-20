@@ -1,6 +1,6 @@
-package be.fkgent.election.services;
+package be.winagent.covidscanner.services;
 
-import be.fkgent.election.domain.models.User;
+import be.winagent.covidscanner.domain.models.User;
 import org.springframework.security.core.Authentication;
 
 import java.util.Optional;

@@ -1,0 +1,27 @@
+security:
+  cas:
+    service:
+      base-url: http://local.todo.ugent.be:8080
+
+azure.keyvault:
+  client-id: cfd73739-4e6d-4faa-b3d2-4b6640566747
+  client-key: PLACEHOLDER
+  tenant-id: 1ddb51d3-bd70-4635-9125-82aaebaca358
+
+## PostgreSQL
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost/covidscanner
+    username: covidscanner
+    password: covidscanner
+  # This is for telemetry in prod.
+  zipkin:
+    enabled: false
+  cloud:
+    config:
+      enabled: false
+
+# This is for telemetry in prod.
+eureka:
+  client:
+    enabled: false

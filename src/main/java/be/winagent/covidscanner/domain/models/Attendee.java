@@ -1,10 +1,8 @@
-package be.fkgent.election.domain.models;
+package be.winagent.covidscanner.domain.models;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
-import org.springframework.util.StringUtils;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;

@@ -1,4 +1,4 @@
-package be.fkgent.election.controllers.annotations;
+package be.winagent.covidscanner.controllers.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

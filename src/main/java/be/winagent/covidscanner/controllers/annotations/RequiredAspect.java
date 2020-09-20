@@ -1,6 +1,6 @@
-package be.fkgent.election.controllers.annotations;
+package be.winagent.covidscanner.controllers.annotations;
 
-import be.fkgent.election.controllers.exceptions.NotFoundException;
+import be.winagent.covidscanner.controllers.exceptions.NotFoundException;
 import lombok.SneakyThrows;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;

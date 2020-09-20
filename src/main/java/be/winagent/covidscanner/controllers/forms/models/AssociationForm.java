@@ -1,4 +1,4 @@
-package be.fkgent.election.controllers.forms.models;
+package be.winagent.covidscanner.controllers.forms.models;
 
 import lombok.Data;
 import org.hibernate.validator.constraints.Length;

@@ -1,9 +1,9 @@
-package be.fkgent.election.services.implementation;
+package be.winagent.covidscanner.services.implementation;
 
-import be.fkgent.election.domain.models.Barcode;
-import be.fkgent.election.domain.models.LDAPUser;
-import be.fkgent.election.domain.models.User;
-import be.fkgent.election.domain.repositories.LDAPUserRepository;
+import be.winagent.covidscanner.domain.models.Barcode;
+import be.winagent.covidscanner.domain.models.LDAPUser;
+import be.winagent.covidscanner.domain.models.User;
+import be.winagent.covidscanner.domain.repositories.LDAPUserRepository;
 import lombok.AllArgsConstructor;
 import lombok.extern.apachecommons.CommonsLog;
 import org.springframework.stereotype.Service;

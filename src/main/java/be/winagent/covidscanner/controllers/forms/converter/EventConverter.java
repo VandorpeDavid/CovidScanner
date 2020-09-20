@@ -1,7 +1,7 @@
-package be.fkgent.election.controllers.forms.converter;
+package be.winagent.covidscanner.controllers.forms.converter;
 
-import be.fkgent.election.controllers.forms.models.EventForm;
-import be.fkgent.election.domain.models.Event;
+import be.winagent.covidscanner.controllers.forms.models.EventForm;
+import be.winagent.covidscanner.domain.models.Event;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 

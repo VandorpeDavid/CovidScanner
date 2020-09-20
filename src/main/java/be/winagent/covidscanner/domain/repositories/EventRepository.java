@@ -1,6 +1,6 @@
-package be.fkgent.election.domain.repositories;
+package be.winagent.covidscanner.domain.repositories;
 
-import be.fkgent.election.domain.models.Event;
+import be.winagent.covidscanner.domain.models.Event;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

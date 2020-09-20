@@ -1,9 +1,7 @@
-package be.fkgent.election.domain.models;
+package be.winagent.covidscanner.domain.models;
 
-import be.fkgent.election.validators.ContactDetailsRequired;
-import be.fkgent.election.validators.HasContactDetails;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import be.winagent.covidscanner.validators.ContactDetailsRequired;
+import be.winagent.covidscanner.validators.HasContactDetails;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.util.StringUtils;

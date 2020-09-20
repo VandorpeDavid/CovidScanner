@@ -1,4 +1,4 @@
-package be.fkgent.election.security;
+package be.winagent.covidscanner.security;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.access.expression.method.MethodSecurityExpressionHandler;

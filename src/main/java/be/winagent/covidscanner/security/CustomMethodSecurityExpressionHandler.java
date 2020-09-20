@@ -1,6 +1,6 @@
-package be.fkgent.election.security;
+package be.winagent.covidscanner.security;
 
-import be.fkgent.election.services.AuthenticationService;
+import be.winagent.covidscanner.services.AuthenticationService;
 import lombok.AllArgsConstructor;
 import org.aopalliance.intercept.MethodInvocation;
 import org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler;

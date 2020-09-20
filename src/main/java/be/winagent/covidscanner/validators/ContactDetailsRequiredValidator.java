@@ -1,4 +1,4 @@
-package be.fkgent.election.validators;
+package be.winagent.covidscanner.validators;
 
 import org.springframework.util.StringUtils;
 

@@ -1,14 +1,10 @@
-package be.fkgent.election.controllers;
+package be.winagent.covidscanner.controllers;
 
-import be.fkgent.election.controllers.annotations.Required;
-import be.fkgent.election.controllers.exceptions.NotFoundException;
-import be.fkgent.election.controllers.forms.converter.BidirectionalConverter;
-import be.fkgent.election.controllers.forms.converter.Converter;
-import be.fkgent.election.controllers.forms.models.AssociationForm;
-import be.fkgent.election.controllers.forms.models.EventForm;
-import be.fkgent.election.domain.models.*;
-import be.fkgent.election.security.annotations.Authenticated;
-import be.fkgent.election.services.EventService;
+import be.winagent.covidscanner.controllers.annotations.Required;
+import be.winagent.covidscanner.controllers.forms.converter.BidirectionalConverter;
+import be.winagent.covidscanner.controllers.forms.models.EventForm;
+import be.winagent.covidscanner.domain.models.*;
+import be.winagent.covidscanner.services.EventService;
 import lombok.AllArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
@@ -21,7 +17,7 @@ import javax.validation.Valid;
 @Controller
 @RequestMapping("/events")
 @AllArgsConstructor
-public class EventController extends FkElectionController {
+public class EventController extends CovidScannerController {
     private final EventService eventService;
     private final BidirectionalConverter<Event, EventForm> eventFormConverter;
 

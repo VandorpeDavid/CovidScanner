@@ -1,9 +1,9 @@
-package be.fkgent.election.services.implementation;
+package be.winagent.covidscanner.services.implementation;
 
-import be.fkgent.election.domain.models.Association;
-import be.fkgent.election.domain.repositories.AssociationRepository;
-import be.fkgent.election.services.AssociationService;
-import be.fkgent.election.services.UserService;
+import be.winagent.covidscanner.domain.models.Association;
+import be.winagent.covidscanner.domain.repositories.AssociationRepository;
+import be.winagent.covidscanner.services.AssociationService;
+import be.winagent.covidscanner.services.UserService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

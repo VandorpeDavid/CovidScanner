@@ -1,4 +1,4 @@
-package be.fkgent.election.config;
+package be.winagent.covidscanner.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

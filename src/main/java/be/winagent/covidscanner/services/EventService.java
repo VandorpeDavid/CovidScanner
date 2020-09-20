@@ -1,6 +1,6 @@
-package be.fkgent.election.services;
+package be.winagent.covidscanner.services;
 
-import be.fkgent.election.domain.models.*;
+import be.winagent.covidscanner.domain.models.*;
 import java.util.Optional;
 
 public interface EventService {

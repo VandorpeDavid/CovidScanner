@@ -1,8 +1,8 @@
-package be.fkgent.election.services.implementation;
+package be.winagent.covidscanner.services.implementation;
 
 
-import be.fkgent.election.domain.models.User;
-import be.fkgent.election.services.UserService;
+import be.winagent.covidscanner.domain.models.User;
+import be.winagent.covidscanner.services.UserService;
 import lombok.AllArgsConstructor;
 import org.jasig.cas.client.authentication.AttributePrincipal;
 import org.jasig.cas.client.validation.Assertion;
@@ -22,7 +22,6 @@ import java.util.List;
 public class UserDetailsService extends AbstractCasAssertionUserDetailsService {
     private final UserService userService;
 
-
     @Override
     protected UserDetails loadUserDetails(Assertion assertion) throws UsernameNotFoundException {
         AttributePrincipal principal = assertion.getPrincipal();
@@ -31,9 +30,14 @@ public class UserDetailsService extends AbstractCasAssertionUserDetailsService {
             throw new UsernameNotFoundException("Unable to retrieve username from CAS assertion");
         }
 
+        return userService.findOrCreateUserByUsername(username)
+                .map(this::buildUserDetails)
+                .orElse(new FKUserDetails());
+    }
+
+    private UserDetails buildUserDetails(User user) {
         List<GrantedAuthority> applicationGrantedAuthorities = new ArrayList<>();
 
-        User user = userService.findOrCreateUserByUsername(username).orElseThrow();
         if(user.isAdmin()) {
             applicationGrantedAuthorities.add(new SimpleGrantedAuthority("ROLE_ADMIN"));
         }

@@ -1,11 +1,11 @@
-package be.fkgent.election.controllers;
+package be.winagent.covidscanner.controllers;
 
-import be.fkgent.election.controllers.annotations.Required;
-import be.fkgent.election.controllers.forms.converter.BidirectionalConverter;
-import be.fkgent.election.controllers.forms.models.AssociationForm;
-import be.fkgent.election.domain.models.Association;
-import be.fkgent.election.domain.models.User;
-import be.fkgent.election.services.AssociationService;
+import be.winagent.covidscanner.controllers.annotations.Required;
+import be.winagent.covidscanner.controllers.forms.converter.BidirectionalConverter;
+import be.winagent.covidscanner.controllers.forms.models.AssociationForm;
+import be.winagent.covidscanner.domain.models.Association;
+import be.winagent.covidscanner.domain.models.User;
+import be.winagent.covidscanner.services.AssociationService;
 import lombok.AllArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
@@ -18,7 +18,7 @@ import javax.validation.Valid;
 @Controller
 @RequestMapping("/associations")
 @AllArgsConstructor
-public class AssociationController extends FkElectionController {
+public class AssociationController extends CovidScannerController {
     private final AssociationService associationService;
     private final BidirectionalConverter<Association, AssociationForm> associationConverter;
 

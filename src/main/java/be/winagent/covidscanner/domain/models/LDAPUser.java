@@ -1,4 +1,4 @@
-package be.fkgent.election.domain.models;
+package be.winagent.covidscanner.domain.models;
 
 import lombok.Getter;
 import lombok.Setter;
