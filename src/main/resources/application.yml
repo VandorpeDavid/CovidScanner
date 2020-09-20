@@ -1,0 +1,25 @@
+security:
+  cas:
+    server:
+      base-url: https://login.ugent.be
+      protocol-version: 2  # has to be explicitly declared (standard = 3)
+    service:
+      base-url: http://local.todo.ugent.be:8080
+application:
+  baseUrl: http://local.todo.ugent.be:8080
+ugent.ldap:
+  url: ldaps://ldaps.ugent.be
+  userDn: cn=vek-soccer,ou=applications,dc=UGent,dc=be
+  password: 'PLACEHOLDER'
+
+## PostgreSQL
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost/covidscanner
+    username: covidscanner
+    password: covidscanner
+  mail:
+    host: localhost
+    port: 25
+
+server.port: 8080

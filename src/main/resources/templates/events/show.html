@@ -1,0 +1,22 @@
+<html layout:decorate="~{layout.html}" xmlns:layout="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+<body>
+<section layout:fragment="content">
+    <h1 th:text="${event.name}"></h1>
+    <div class="list-group pb-3 pl-5">
+        <a class="col-sm-4 btn btn-primary list-group-item list-group-item-action m-1"
+           th:href="@{/attendees(event=${event.id})}">Bezoekers weergeven</a>
+        <a class="col-sm-4 btn btn-primary list-group-item list-group-item-action m-1"
+           th:href="@{/attendees/scan(event=${event.id})}">Scan bezoekers</a>
+        <a class="col-sm-4 btn btn-primary list-group-item list-group-item-action m-1"
+           th:href="@{/attendees/createExtern(event=${event.id})}">Bezoekers ingeven</a>
+        <a class="col-sm-4 btn btn-primary list-group-item list-group-item-action m-1"
+           th:href="@{/attendees/export(event=${event.id})}">Bezoekers exporteren</a>
+        <a class="col-sm-4 btn btn-primary list-group-item list-group-item-action m-1"
+           th:href="@{/events/edit(event=${event.id})}">Evenement aanpassen</a>
+    </div>
+</section>
+</body>
+</html>

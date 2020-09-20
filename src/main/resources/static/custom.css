@@ -1,0 +1,73 @@
+.hint {
+    color: gray;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+    padding-left: 0;
+}
+
+#content {
+    padding-top: 2em;
+    padding-bottom: 7em;
+}
+
+.error {
+    margin-left: 2rem;
+    color: red;
+}
+
+.list-group-item + .list-group-item {
+    border-top-width: 1px;
+}
+
+#scan-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#scan-list .scan-item {
+    flex-grow: 1;
+    min-width: 26%;
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 7em;
+    margin: 5px;
+    flex-basis: 20%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#scan-list .scan-item.status-confirmed {
+    background-color: green;
+}
+
+#scan-list .scan-item.status-requested {
+    background-color: lightgray;
+}
+
+#scan-list .scan-item.status-error {
+    background-color: black;
+    color: white;
+}
+
+#scan-list .scan-item.status-duplicate {
+    background-color: orange;
+}
+
+#scan-list .scan-item.status-not_found {
+    background-color: red;
+}
+
+.navbar-brand img {
+    max-width: 50px;
+}

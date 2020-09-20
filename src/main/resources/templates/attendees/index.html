@@ -1,0 +1,52 @@
+<html layout:decorate="~{layout.html}" xmlns:layout="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+<body>
+<section layout:fragment="content">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a
+                    th:href="@{/associations/show(association=${event.association.abbreviation})}"
+                    th:text="${event.association.name}"/></li>
+            <li class="breadcrumb-item"><a th:href="@{/events/show(event=${event.id})}" th:text="${event.name}"/></li>
+            <li class="breadcrumb-item active" aria-current="page">Bezoekerlijst</li>
+        </ol>
+    </nav>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>&nbsp;</th>
+            <th>
+                Voornaam
+            </th>
+            <th>
+                Achternaam
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Telefoon
+            </th>
+            <th>
+                Casnaam
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="attendee, iter : ${event.attendees}">
+            <td th:text="${iter.index+1}"/>
+            <td th:text="${attendee.firstName}"/>
+            <td th:text="${attendee.lastName}"/>
+            <td th:text="${attendee.email}"/>
+            <td th:text="${attendee.phone}"/>
+            <td th:text="${attendee.casName}"/>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+</body>
+</html>
