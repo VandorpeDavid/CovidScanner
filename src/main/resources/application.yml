@@ -4,6 +4,8 @@ security:
       base-url: https://login.ugent.be
       protocol-version: 2  # has to be explicitly declared (default = 3)
     service:
+      paths:
+        logout: /logout
       base-url: https://wish.wina-gent.be/
 
 ugent.ldap:

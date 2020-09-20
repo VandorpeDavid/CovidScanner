@@ -68,6 +68,11 @@ ul li {
     background-color: red;
 }
 
+a.as-text, a.as-text:hover, a.as-text:focus {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 .navbar-brand img {
     max-width: 50px;
 }

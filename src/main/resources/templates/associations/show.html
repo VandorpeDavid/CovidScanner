@@ -7,7 +7,7 @@
     <h1 th:text="${association.name}"></h1>
     <h2>Evenementen</h2>
     <div class="list-group pt-3 pb-3 pl-5">
-        <span th:each="event : ${association.events}">
+        <span th:each="event : ${association.events}" th:if="${!event.deleted}">
             <a class="col-sm-4 btn btn-primary list-group-item list-group-item-action m-1"
                th:href="@{/events/show(event=${event.id})}" th:text="${event.name}">
             </a>
