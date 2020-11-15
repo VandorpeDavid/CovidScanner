@@ -26,6 +26,12 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private Set<Barcode> barcodes = new HashSet<>();
 
+    @ManyToMany(mappedBy = "admins")
+    private Set<Association> associations = new HashSet<>();
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private Set<UGentAttendee> attended = new HashSet<>();
+
     private boolean admin;
 
     @Email

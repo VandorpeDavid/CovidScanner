@@ -104,6 +104,11 @@ public class UserServiceImplementation implements UserService {
                 );
     }
 
+    @Override
+    public void deleteAll(Iterable<User> users) {
+        this.userRepository.deleteAll(users);
+    }
+
     private User mergeOrCreate(User user) {
         Optional<User> existing = userRepository.findByUsername(user.getUsername());
         if (existing.isEmpty()) {

@@ -7,3 +7,12 @@ databaseChangeLog:
             encoding: utf8
             path: db/initial.sql
             dbms: postgresql
+  - changeSet:
+      id: rename_association_id_column
+      author: davdorpe
+      changes:
+        - sqlFile:
+            encoding: utf8
+            path: db/rename_association_id_column.sql
+            dbms: postgresql
+

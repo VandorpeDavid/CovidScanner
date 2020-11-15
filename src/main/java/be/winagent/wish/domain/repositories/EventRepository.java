@@ -9,5 +9,5 @@ import java.util.stream.Stream;
 
 @Repository
 public interface EventRepository extends CrudRepository<Event, Long> {
-    public Stream<Event> findAllByCreatedIsBeforeAndDeletedIsFalse(LocalDateTime before);
+    public Stream<Event> findAllByCreatedIsBefore(LocalDateTime before);
 }

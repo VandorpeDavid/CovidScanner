@@ -30,7 +30,7 @@ public class Event {
     @CreationTimestamp
     private LocalDateTime created;
 
-    @OneToMany(mappedBy = "event")
+    @OneToMany(mappedBy = "event", cascade = CascadeType.ALL, orphanRemoval = true)
     @OrderBy("entered")
     private List<Attendee> attendees = new ArrayList<>();
 }
